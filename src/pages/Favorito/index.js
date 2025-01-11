@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './favoritos.css';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function Favorito(){
     const [filmes, setFilmes] = useState([]);
@@ -19,7 +20,7 @@ function Favorito(){
             return(item.id !== id)
         })
 
-        alert('Filme excluído com sucesso!');
+        toast.success("Filme removido com sucésso");
 
         setFilmes(filtroFilmes);
 

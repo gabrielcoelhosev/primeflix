@@ -34,5 +34,28 @@
 .meus-filmes div a{
     margin-right: 14px;
     text-decoration: none;
-    color: green;
+}
+
+button{
+    background-color: rgb(223, 220, 220);
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(180, 10, 10);
+}
+
+.detalhes{
+    font-weight: 500;
+    color: black;
+    transition: 0.3s;
+}
+
+.detalhes:hover{
+    font-weight: bolder;
 }
